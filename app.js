@@ -5,8 +5,13 @@ const app = express();
 //DEFINISCO LA PORTA 3000
 const port = 3000;
 
+//importo il file router per i post
+const postRouter = require('./routers/posts.js');
+
 //INSERIMENTO DEL MIDDLEWARE PER I FILE STATICI
 app.use(express.static('public'));
+
+app.use('/posts', postRouter);
 
 //DEFINISCO LA ROTTA ENTRY POINT DELLA NOSTRA APPLICAZIONE
 app.get('/', (req, res) => {
