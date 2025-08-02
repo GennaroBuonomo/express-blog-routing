@@ -9,3 +9,11 @@ const router = express.router();
 router.get('/', (req,res) => {
   res.send('Elenco dei post')
 });
+
+//SHOW
+router.get('/:id', (req, res) =>{
+  res.send(`Dettaglio dei post con id ${req.params.id}`)
+});
+
+//CREATE 
+router.get
