@@ -16,8 +16,13 @@ router.get('/:id', (req, res) =>{
 });
 
 //CREATE 
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
   res.send('Creazione di un nuovo post');
 });
 
 //UPDATE
+router.put('/:id', (req, res) => {
+  res.send(`Modifica totale dei post in id ${req.params.id}`);
+});
+
+//DELATE
