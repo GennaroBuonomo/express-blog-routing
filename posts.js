@@ -12,8 +12,12 @@ router.get('/', (req,res) => {
 
 //SHOW
 router.get('/:id', (req, res) =>{
-  res.send(`Dettaglio dei post con id ${req.params.id}`)
+  res.send(`Dettaglio dei post con id ${req.params.id}`);
 });
 
 //CREATE 
-router.get
+router.get('/', (req, res) => {
+  res.send('Creazione di un nuovo post');
+});
+
+//UPDATE
