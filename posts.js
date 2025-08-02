@@ -30,3 +30,7 @@ router.delete('/:id', (req, res) => {
   res.sed(`Cancellazione dei post con id ${req.params.id}`);  
 });
 
+//Esporto sal router
+module.express = router;
+
+
