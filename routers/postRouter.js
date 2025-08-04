@@ -1,12 +1,12 @@
 //importo express
-const express = require('expres');
+const express = require('express');
 
 //definisco un' istanza della classe Router di express
-const router = express.router();
+const router = express.Router();
 
 //definisco le rotte per i post
 //INDEX
-router.get('/', (req,res) => {
+router.get('/', (req, res) => {
   res.send('Elenco dei post')
 });
 
@@ -30,7 +30,5 @@ router.delete('/:id', (req, res) => {
   res.sed(`Cancellazione dei post con id ${req.params.id}`);  
 });
 
-//Esporto sal router
+//Esporto il router
 module.express = router;
-
-
