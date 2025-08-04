@@ -1,7 +1,7 @@
 //importo express
-const express = require ('expres');
+const express = require('expres');
 
-//definisco l' oggetto router
+//definisco un' istanza della classe Router di express
 const router = express.router();
 
 //definisco le rotte per i post
